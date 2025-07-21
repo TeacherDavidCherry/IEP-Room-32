@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Vocabulary Quiz</h1>
+    
+    <form id="quizForm">
+        <label for="studentName">Your Name:</label>
+        <input type="text" id="studentName" required>
+        
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" required>
+
+        <div id="quiz">
+            <label for="q1"></label>
+            <input type="text" id="q1" placeholder="1" required>
+
+            <label for="q2"></label>
+            <input type="text" id="q2" placeholder="2" required>
+
+            <label for="q3"></label>
+            <input type="text" id="q3" placeholder="3" required>
+
+            <label for="q4"></label>
+            <input type="text" id="q4" placeholder="4" required>
+
+            <label for="q5"></label>
+            <input type="text" id="q5" placeholder="5" required>
+
+            <label for="q6"></label>
+            <input type="text" id="q6" placeholder="6" required>
+
+            <label for="q7"></label>
+            <input type="text" id="q7" placeholder="7" required>
+
+            <label for="q8"></label>
+            <input type="text" id="q8" placeholder="8" required>
+
+            <label for="q9"></label>
+            <input type="text" id="q9" placeholder="9" required>
+
+            <label for="q10"></label>
+            <input type="text" id="q10" placeholder="10" required>
+
+            <label for="q11"></label>
+            <input type="text" id="q11" placeholder="11" required>
+
+            <label for="q12"></label>
+            <input type="text" id="q12" placeholder="12" required>
+
+            <label for="q13"></label>
+            <input type="text" id="q13" placeholder="13" required>
+
+            <label for="q14"></label>
+            <input type="text" id="q14" placeholder="14" required>
+
+            <label for="q15"></label>
+            <input type="text" id="q15" placeholder="15" required>
+
+            <label for="q16"></label>
+            <input type="text" id="q16" placeholder="16" required>
+
+            <label for="q17"></label>
+            <input type="text" id="q17" placeholder="17" required>
+
+            <label for="q18"></label>
+            <input type="text" id="q18" placeholder="18" required>
+
+            <label for="q19"></label>
+            <input type="text" id="q19" placeholder="19" required>
+
+            <label for="q20"></label>
+            <input type="text" id="q20" placeholder="20" required>
+
+            <label for="q21"></label>
+            <input type="text" id="q21" placeholder="21" required>
+
+            <label for="q22"></label>
+            <input type="text" id="q22" placeholder="22" required>
+
+            <label for="q23"></label>
+            <input type="text" id="q23" placeholder="23" required>
+            
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </div>
+    </form>
+
+    <div id="result" class="result" style="display: none;">
+        <h3>Results:</h3>
+        <p><strong>Name:</strong> <span id="resultName"></span></p>
+        <p><strong>ID Number:</strong> <span id="resultId"></span></p>
+        <p><strong>Date:</strong> <span id="resultDate"></span></p>
+        <p><strong>Score:</strong> <span id="resultScore"></span></p>
+    </div>
+
+    <script>
+        const correctAnswers = [
+            'skiing', 'play', 'make', 'basketball', 'didn’t', 'became', 'volleyball', 'buy', 'swimming', 'miss',
+            'wave', 'get', 'give', 'want', 'skateboarding', 'ice hockey', 'arrive', 'snowboarding', 'happen', 
+            'did', 'surfing', 'invited', 'go'
+        ];
+
+        function submitQuiz() {
+            let score = 0;
+            const studentName = document.getElementById('studentName').value;
+            const studentId = document.getElementById('studentId').value;
+            const date = new Date().toLocaleDateString();
+
+            for (let i = 0; i < correctAnswers.length; i++) {
+                const userAnswer = document.getElementById('q' + (i + 1)).value.trim().toLowerCase();
+                if (userAnswer === correctAnswers[i]) {
+                    score++;
+                }
+            }
+
+            document.getElementById('resultName').textContent = studentName;
+            document.getElementById('resultId').textContent = studentId;
+            document.getElementById('resultDate').textContent = date;
+            document.getElementById('resultScore').textContent = score + ' / ' + correctAnswers.length;
+
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
