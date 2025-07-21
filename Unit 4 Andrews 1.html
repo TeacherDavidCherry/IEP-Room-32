@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Game Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question input {
+            margin-right: 10px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .submit-section {
+            margin-top: 20px;
+        }
+        .result {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .result p {
+            font-weight: bold;
+        }
+        .story-text {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>The Big Game Quiz</h1>
+    <form id="quizForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="shirtNumber">Shirt Number:</label>
+        <input type="number" id="shirtNumber" name="shirtNumber" required><br><br>
+
+        <!-- Question 1 -->
+        <div class="story-text">
+            <p>The big football match took place last Saturday. Putter and his friends played in the football match. Their team was called the Tigers. They were very excited because it was the final game of the school tournament.</p>
+            <p>1. What was the name of Putter's team?</p>
+            <label><input type="radio" name="q1" value="a"> The Lions</label>
+            <label><input type="radio" name="q1" value="b"> The Tigers</label>
+            <label><input type="radio" name="q1" value="c"> The Bears</label>
+            <label><input type="radio" name="q1" value="d"> The Eagles</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="story-text">
+            <p>In the morning, Putter got dressed quickly. He wore his football shirt, shorts, and shoes. His dad gave him a big breakfast and said, "Good luck!" Putter smiled and waved as he left the house.</p>
+            <p>2. What did Putter wear for the match?</p>
+            <label><input type="radio" name="q2" value="a"> A football shirt, shorts, and shoes</label>
+            <label><input type="radio" name="q2" value="b"> A t-shirt and jeans</label>
+            <label><input type="radio" name="q2" value="c"> A jacket and sneakers</label>
+            <label><input type="radio" name="q2" value="d"> A suit and tie</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="story-text">
+            <p>At the football field, many people arrived to watch. Putter saw his parents, his little sister, and even his teacher. His best friend, Napat, was the team captain. He invited Putter to help lead the warm-up. They ran, stretched, and passed the ball. Everyone felt ready.</p>
+            <p>3. Who was the captain of the Tigers team?</p>
+            <label><input type="radio" name="q3" value="a"> Putter</label>
+            <label><input type="radio" name="q3" value="b"> Napat</label>
+            <label><input type="radio" name="q3" value="c"> Putter’s dad</label>
+            <label><input type="radio" name="q3" value="d"> The referee</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="story-text">
+            <p>The match started at 10:00. In the first half, the other team scored a goal. The Tigers tried hard, but they didn't score. Putter missed a big chance, and he felt nervous. "What happened?" he thought. But then he just smiled and said, "Don't give up!"</p>
+            <p>4. What did Putter and his team do to prepare for the match?</p>
+            <label><input type="radio" name="q4" value="a"> They took a break and rested.</label>
+            <label><input type="radio" name="q4" value="b"> They ran, stretched, and passed the ball.</label>
+            <label><input type="radio" name="q4" value="c"> They went to eat lunch.</label>
+            <label><input type="radio" name="q4" value="d"> They watched a football game on TV.</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="story-text">
+            <p>In the second half, the Tigers played better. They passed the ball quickly and ran fast. Putter got the ball, ran down the field, and kicked it hard. Goal! The crowd cheered, and his team gave him high fives. The score was 1-1.</p>
+            <p>5. What happened in the first half of the match?</p>
+            <label><input type="radio" name="q5" value="a"> The Tigers scored two goals.</label>
+            <label><input type="radio" name="q5" value="b"> Putter scored the first goal.</label>
+            <label><input type="radio" name="q5" value="c"> The other team scored a goal.</label>
+            <label><input type="radio" name="q5" value="d"> The Tigers won the game.</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="story-text">
+            <p>Then something amazing happened. Napat got the ball and made a great pass to Putter. Putter kicked it again. Another goal! The Tigers were winning 2-1. Everyone jumped up and cheered.</p>
+            <p>6. How did Putter feel when he missed a big chance to score?</p>
+            <label><input type="radio" name="q6" value="a"> Happy</label>
+            <label><input type="radio" name="q6" value="b"> Nervous</label>
+            <label><input type="radio" name="q6" value="c"> Angry</label>
+            <label><input type="radio" name="q6" value="d"> Confused</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="story-text">
+            <p>But the game wasn't over. The other team attacked again and again. Their best player almost scored, but the Tigers' goalkeeper made a great save. The crowd clapped and shouted. Finally, the referee blew the whistle. The Tigers had won! They gave each other hugs and cheered. Putter smiled and looked at Napat. "We did it!" he said.</p>
+            <p>7. What was the score after Putter scored his first goal?</p>
+            <label><input type="radio" name="q7" value="a"> 2-0</label>
+            <label><input type="radio" name="q7" value="b"> 1-1</label>
+            <label><input type="radio" name="q7" value="c"> 2-1</label>
+            <label><input type="radio" name="q7" value="d"> 3-0</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="story-text">
+            <p>After the match, the coach gave the team medals. He said, "You played with skill and teamwork. I'm proud of you." Putter’s sister gave him a big hug and said, "You were amazing!"</p>
+            <p>8. Who made the great pass to Putter for his second goal?</p>
+            <label><input type="radio" name="q8" value="a"> His little sister</label>
+            <label><input type="radio" name="q8" value="b"> The goalkeeper</label>
+            <label><input type="radio" name="q8" value="c"> Napat</label>
+            <label><input type="radio" name="q8" value="d"> His teacher</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="story-text">
+            <p>At home that night, Putter was very tired but very happy. He was talking to Napat on the phone. They laughed about the game and talked about their favorite moments. "I missed one goal," Napat said, "but I'm glad you scored too."</p>
+            <p>9. How did the other team try to win?</p>
+            <label><input type="radio" name="q9" value="a"> They played slowly and carefully.</label>
+            <label><input type="radio" name="q9" value="b"> They attacked the Tigers repeatedly.</label>
+            <label><input type="radio" name="q9" value="c"> They celebrated early.</label>
+            <label><input type="radio" name="q9" value="d"> They stopped playing after the first half.</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="story-text">
+            <p>"You gave me the perfect pass," Putter said. "We make a great team."</p>
+            <p>10. What did the referee do when the game ended?</p>
+            <label><input type="radio" name="q10" value="a"> He started a new match.</label>
+            <label><input type="radio" name="q10" value="b"> He gave the Tigers a warning.</label>
+            <label><input type="radio" name="q10" value="c"> He blew the whistle to end the game.</label>
+            <label><input type="radio" name="q10" value="d"> He announced the score.</label>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="story-text">
+            <p>Napat said, "You're not just a good player. You're a true friend."</p>
+            <p>11. What did Putter’s coach say to the team after the match?</p>
+            <label><input type="radio" name="q11" value="a"> "You need to practice more."</label>
+            <label><input type="radio" name="q11" value="b"> "I'm proud of you for your skill and teamwork."</label>
+            <label><input type="radio" name="q11" value="c"> "You played badly today."</label>
+            <label><input type="radio" name="q11" value="d"> "We need to try harder next time."</label>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="story-text">
+            <p>Putter smiled. "You too," he said. "Let's play again next week."</p>
+            <p>12. How did Putter feel at home after the match?</p>
+            <label><input type="radio" name="q12" value="a"> Excited and hungry</label>
+            <label><input type="radio" name="q12" value="b"> Tired but happy</label>
+            <label><input type="radio" name="q12" value="c"> Sad and disappointed</label>
+            <label><input type="radio" name="q12" value="d"> Nervous about the next game</label>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="story-text">
+            <p>At home, Putter was very tired but happy. He talked to Napat about their favorite moments of the match.</p>
+            <p>13. What did Putter and Napat talk about after the match?</p>
+            <label><input type="radio" name="q13" value="a"> The weather</label>
+            <label><input type="radio" name="q13" value="b"> The best moments of the game</label>
+            <label><input type="radio" name="q13" value="c"> What they were going to eat</label>
+            <label><input type="radio" name="q13" value="d"> Their homework</label>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="story-text">
+            <p>When talking on the phone, Napat said to Putter, "We make a great team!"</p>
+            <p>14. What did Napat say to Putter on the phone?</p>
+            <label><input type="radio" name="q14" value="a"> "You were the best player."</label>
+            <label><input type="radio" name="q14" value="b"> "You missed the game-winning goal."</label>
+            <label><input type="radio" name="q14" value="c"> "We make a great team."</label>
+            <label><input type="radio" name="q14" value="d"> "You're just a good player, not a true friend."</label>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="story-text">
+            <p>Putter smiled and said, "You too, Napat! Let's play again next week!"</p>
+            <p>15. What did Putter say about Napat?</p>
+            <label><input type="radio" name="q15" value="a"> "He’s a true friend."</label>
+            <label><input type="radio" name="q15" value="b"> "He’s a great goalkeeper."</label>
+            <label><input type="radio" name="q15" value="c"> "He’s the best scorer."</label>
+            <label><input type="radio" name="q15" value="d"> "He’s always nervous."</label>
+        </div>
+
+        <div class="submit-section">
+            <button type="submit">Submit Quiz</button>
+        </div>
+    </form>
+
+    <div class="result" id="resultSection" style="display:none;">
+        <p id="studentInfo"></p>
+        <p>Your Score: <span id="score"></span> out of 15</p>
+    </div>
+</div>
+
+<script>
+    const correctAnswers = {
+        q1: 'b',
+        q2: 'a',
+        q3: 'b',
+        q4: 'b',
+        q5: 'c',
+        q6: 'b',
+        q7: 'b',
+        q8: 'c',
+        q9: 'b',
+        q10: 'c',
+        q11: 'b',
+        q12: 'b',
+        q13: 'b',
+        q14: 'c',
+        q15: 'a'
+    };
+
+    const quizForm = document.getElementById("quizForm");
+    quizForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let score = 0;
+        let studentName = document.getElementById("name").value;
+        let shirtNumber = document.getElementById("shirtNumber").value;
+        let currentDate = new Date().toLocaleDateString();
+
+        // Check answers
+        for (let question in correctAnswers) {
+            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+            if (selectedOption && selectedOption.value === correctAnswers[question]) {
+                score++;
+            }
+        }
+
+        // Display results
+        document.getElementById("studentInfo").innerText = `Name: ${studentName}, Shirt Number: ${shirtNumber}, Date: ${currentDate}`;
+        document.getElementById("score").innerText = score;
+        document.getElementById("resultSection").style.display = "block";
+    });
+</script>
+
+</body>
+</html>
