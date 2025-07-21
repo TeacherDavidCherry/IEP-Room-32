@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Epic Weekend Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question input {
+            margin-right: 10px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .submit-section {
+            margin-top: 20px;
+        }
+        .result {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .result p {
+            font-weight: bold;
+        }
+        .story-text {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Jack's Epic Weekend Quiz</h1>
+    <form id="quizForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="shirtNumber">Shirt Number:</label>
+        <input type="number" id="shirtNumber" name="shirtNumber" required><br><br>
+
+        <!-- Question 1 -->
+        <div class="story-text">
+            <p>Last weekend was totally awesome for Jack. Best weekend ever. It was incredible!</p>
+            <p>1. What did Jack and Tom do on Friday afternoon?</p>
+            <label><input type="radio" name="q1" value="a"> Went skateboarding</label>
+            <label><input type="radio" name="q1" value="b"> Played basketball</label>
+            <label><input type="radio" name="q1" value="c"> Went to the beach</label>
+            <label><input type="radio" name="q1" value="d"> Went skiing</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="story-text">
+            <p>It all kicked off on Friday afternoon. Jack and his best friend, Tom, zoomed through their homework like superheroes on a mission. Math had no chance. Then they grabbed their basketball and headed to the park. Jack made three baskets in a row like a pro. Swish, swish, swish! Tom tried a fancy spin shot and missed twice. They laughed so hard he nearly dropped the ball. But who cares? They were having a blast.</p>
+            <p>2. How did Jack feel about his basketball shots?</p>
+            <label><input type="radio" name="q2" value="a"> Nervous</label>
+            <label><input type="radio" name="q2" value="b"> Proud</label>
+            <label><input type="radio" name="q2" value="c"> Angry</label>
+            <label><input type="radio" name="q2" value="d"> Confused</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="story-text">
+            <p>3. What happened when Tom tried a fancy spin shot?</p>
+            <label><input type="radio" name="q3" value="a"> He made the shot</label>
+            <label><input type="radio" name="q3" value="b"> He missed twice and nearly dropped the ball</label>
+            <label><input type="radio" name="q3" value="c"> He scored three baskets</label>
+            <label><input type="radio" name="q3" value="d"> He passed the ball to Jack</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="story-text">
+            <p>Saturday morning, Jack woke up feeling like something exciting was waiting—and he was right. His cousin Max called and said, "Dude, want to go skateboarding?" Jack had never tried it before. "Okay… okay," he said, already nervous.</p>
+            <p>4. What was Jack’s reaction when Max called him to go skateboarding?</p>
+            <label><input type="radio" name="q4" value="a"> He was excited</label>
+            <label><input type="radio" name="q4" value="b"> He was nervous</label>
+            <label><input type="radio" name="q4" value="c"> He refused</label>
+            <label><input type="radio" name="q4" value="d"> He didn’t understand the question</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="story-text">
+            <p>At the skatepark, Jack stood up on the board like it was a wild animal. "Relax!" Max grinned. "Just ride it like a wave." Jack had no idea what that meant. He wobbled forward and nearly fell. But then Max cheered, "You got this!" That gave Jack superpowers or something, because suddenly he was zooming around like a turtle on wheels. Not fast, but moving!</p>
+            <p>5. How did Jack feel when he first tried skateboarding?</p>
+            <label><input type="radio" name="q5" value="a"> Confident</label>
+            <label><input type="radio" name="q5" value="b"> Nervous and wobbly</label>
+            <label><input type="radio" name="q5" value="c"> Excited</label>
+            <label><input type="radio" name="q5" value="d"> Frustrated</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="story-text">
+            <p>6. What advice did Max give Jack while skateboarding?</p>
+            <label><input type="radio" name="q6" value="a"> "Relax and ride it like a wave"</label>
+            <label><input type="radio" name="q6" value="b"> "Try to go really fast"</label>
+            <label><input type="radio" name="q6" value="c"> "You need special shoes"</label>
+            <label><input type="radio" name="q6" value="d"> "Fall only once"</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="story-text">
+            <p>By afternoon, things got even better. They hit the beach! Max brought his surfboard, and Jack’s eyes got big. "Surfing? For real?" Max gave a 5-minute surfing lesson that mostly went, "Just don’t fall." Spoiler alert: Jack fell. A lot. But he kept going, and then, bam! He stood up on a wave. It was tiny, but to Jack, it felt like riding a dragon. He threw his hands up and yelled, "I’m flying!" before falling again, face-first into the water. Still worth it.</p>
+            <p>7. What happened when Jack tried surfing for the first time?</p>
+            <label><input type="radio" name="q7" value="a"> He caught a big wave immediately</label>
+            <label><input type="radio" name="q7" value="b"> He fell many times but finally stood up</label>
+            <label><input type="radio" name="q7" value="c"> He didn't fall at all</label>
+            <label><input type="radio" name="q7" value="d"> He got scared and stopped</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="story-text">
+            <p>8. How did Jack feel when he finally stood up on the surfboard?</p>
+            <label><input type="radio" name="q8" value="a"> Like riding a dragon</label>
+            <label><input type="radio" name="q8" value="b"> Nervous and unsure</label>
+            <label><input type="radio" name="q8" value="c"> Like a pro surfer</label>
+            <label><input type="radio" name="q8" value="d"> Like he was going to fall again</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="story-text">
+            <p>That evening, Max’s family invited Jack to stay for dinner. They made spaghetti with meatballs—Jack’s favorite. And they had ice cream for dessert, three flavors! They laughed, told funny stories, and even had a spaghetti slurp contest. Max won, but just barely.</p>
+            <p>9. What did Jack eat for dinner at Max’s house?</p>
